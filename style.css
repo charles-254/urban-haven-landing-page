@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --heading-font: "Playfair Display", serif;
+  --secondary-font: "Almendra", serif;
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: #a5b5c2;
+  --background-color: #161d2b;
+  --background-color-lighter: #2a3242;
+  --black-main: rgb(0, 0, 0);
+  --hover-color: #68bc00;
+  --selection-color-text: #9bec00;
+  --button-color: linear-gradient(
+    to right,
+    rgba(6, 208, 1, 0.7),
+    rgba(155, 236, 0, 0.7)
+  );
+  --selection-background-color: rgba(0, 0, 0, 0.5);
+}
+::selection {
+  background-color: var(--selection-background-color);
+  color: var(--selection-color-text);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
